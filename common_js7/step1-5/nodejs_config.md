@@ -21,7 +21,7 @@ module.exports = (a, b) => a + b;
 터미널에서 `node inspect file.js` 을 입력하면 디버그 모드로 자바스크립트가 실행된다.
 
 ```console
-❯ node inspect module_test.js
+$ node inspect module_test.js
 < Debugger listening on ws://127.0.0.1:9229/04e835ce-8cd2-403a-a8c3-4b416df36980
 < For help, see: https://nodejs.org/en/docs/inspector
 < Debugger attached.
@@ -154,7 +154,7 @@ greeting();
 최초에 `node inspect`를 실행하고 `backtrace`또는 `bt`를 입력하면 다음과 같다.
 
 ```console
-❯ node inspect call_stack.js
+$ node inspect call_stack.js
 < Debugger listening on ws://127.0.0.1:9229/15849da3-9d70-4d00-949f-99646adc6841
 < For help, see: https://nodejs.org/en/docs/inspector
 < Debugger attached.
