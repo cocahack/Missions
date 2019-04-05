@@ -62,6 +62,8 @@ Git 설정은 `git config`라는 명령어로 할 수 있다. 이때 사용하�
 
 각 설정의 우선순위는 역순이다. 
 
+MacOS에서 global 설정 파일은 `~/.gitconfig`이다.
+
 예시
 
 ```console
@@ -71,6 +73,9 @@ $ git config --global user.email johndoe@example.com
 
 # 기본 편집기 수정
 $ git config --global core.editor emacs
+
+# global 설정 파일 직접 수정
+$ git config --global -e
 ```
 
 ### .git 디렉토리 구조
@@ -161,29 +166,69 @@ Untracked 상태에 있는 파일을 add하면 다음과 같다.
 
 ```console
 $ git add README
+$ git status
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
 
+    new file:   README
 ```
 
+`Changes to be committed`에 들어있는 파일은 Staged 상태임을 의미한다. 
 
+Modified 상태의 파일을 수정하면 다음과 같다.
 
-## 기타
+```console
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
 
-### Git convention
+    new file:   README
 
-첫번째 원격 저장소 - origin(git remote -v)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
 
-첫번째 커밋 - master
+    modified:   CONTRIBUTING.md
+```
 
-### 
+` Changes not staged for commit`은 수정한 파일이 tracked 상태이지만 staged 상태는 아니라는 뜻이다. `git add` 로 staged 상태로 만들면 다음과 같은 화면을 볼 수 있다.
 
-## 정리할 키워드
+```console
+$ git add CONTRIBUTING.md
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
 
-git commit --amend
+    new file:   README
+    modified:   CONTRIBUTING.md
+```
 
-내용이 바뀔 때 object가 생김
+`git commit`을 사용하여 변경사항을 커밋할 수 있다.
 
-중복된 내용은 파일이 여러개여도 하나만 저장됨
+```console
+$ git commit
+```
 
-rebase 나를 들어서 다른 브랜치로 옮긴다 항상 다른 커밋을 만든다
+```console
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   README
+#	modified:   CONTRIBUTING.md
+#
+~
+~
+~
+".git/COMMIT_EDITMSG" 9L, 283C
+```
 
-여러 명이 공유하는 원격 저장소는 rebase나 merge 중 하나만 쓰도록 해야한다. 그
