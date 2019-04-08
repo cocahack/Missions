@@ -60,6 +60,8 @@ bool nor(const bool a, const bool b)
 
 <img style="width:250px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Half-adder.svg/2560px-Half-adder.svg.png">
 
+출처: [반가산기 회로도 - Wikipedia](https://ko.wikipedia.org/wiki/%EA%B0%80%EC%82%B0%EA%B8%B0#/media/File:Half-adder.svg)
+
 반가산기는 AND, XOR 게이트 각각 하나씩 사용하여 구현할 수 있다. XOR 게이트는 AND, OR, NOT을 적절히 사용하여 구현할 수 있다. 이에 관한 내용은 [이곳](https://en.wikipedia.org/wiki/XOR_gate)에서 볼 수 있다.
 
 반가산기의 진리표는 다음과 같다.
@@ -94,11 +96,9 @@ vector<bool> half_adder(const bool a, const bool b)
 
 전가산기를 구현하는 방법은 두 개의 반가산기와 OR 게이트를 다음과 같이 연결하면 된다.
 
-![nor](http://public.codesquad.kr/jk/cs23/step1-fulladder.png)
+![full-adder with two half-adders](https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Full_Adder_Blocks.svg/600px-Full_Adder_Blocks.svg.png)
 
-내부 구현을 가리면 다음과 같이 입력 3개를 받아 출력 2개를 만드는 구조가 된다.
-
-![nor](http://public.codesquad.kr/jk/cs23/step1-fulladder-symbol.png)
+출처: [전가산기 - Wikibooks](https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Full_Adder_Blocks.svg/600px-Full_Adder_Blocks.svg.png)
 
 전가산기 회로도의 첫번째 그림을 참조하여 구현하면 다음과 같다.
 
@@ -119,7 +119,9 @@ vector<bool> full_adder(const bool a, const bool b, const bool carry)
 
 n-비트를 가산하려면 복수의 전가산기를 이용하는 방법이 있다. 4비트 가산기를 회로도로 나타내면 아래 그림과 같다.
 
-<img style="width:400px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/4-bit_ripple_carry_adder.svg/1000px-4-bit_ripple_carry_adder.svg.png">
+<img style="width:400px" alt="4-bit-ripple-carry-adder" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/4-bit_ripple_carry_adder.svg/1000px-4-bit_ripple_carry_adder.svg.png">
+
+출처: [리플 자리올림수 가산기 - Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/4-bit_ripple_carry_adder.svg/1000px-4-bit_ripple_carry_adder.svg.png)
 
 앞서 구현했던 전가산기를 이용하여 비트 수 만큼 루프를 돌리면 덧셈 구현이 가능하다. 
 

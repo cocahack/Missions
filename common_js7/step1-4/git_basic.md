@@ -8,21 +8,23 @@ Git은 DVCS(분산 버전 관리 시스템)이다. Git같은 DVCS에서의 클�
 
 ![분산 버전 관리 시스템(DVCS)](https://git-scm.com/book/en/v2/images/distributed.png)
 
+출처: [분산 버전 관리 시스템 - Pro Git](https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC%EB%9E%80%3F)
+
 ### Git이 데이터를 다루는 방법
 
-Git은 데이터를 파일 시스템 스냅샷의 연속으로 취급하고 크기가 아주 작다. Git은 커밋하거나 프로젝트의 상태를 저장할 때마다 파일이 존재하는 그 순간을 중요하게 여긴다. 파일이 달라지지 않았으면 Git은 성능을 위해서 파일을 새로 저장하지 않는다. 단지 이전 상태의 파일에 대한 링크만 저장한다. Git은 데이터를 **스냅샷의 스트림** 처럼 취급한다.
+Git은 커밋하거나 프로젝트의 상태를 저장할 때마다 파일이 존재하는 그 순간을 중요하게 여긴다. 파일이 달라지지 않았으면 Git은 성능을 위해서 파일을 새로 저장하지 않는다. 단지 이전 상태의 파일에 대한 링크만 저장한다. 
 
 ![시간순으로 프로젝트의 스냅샷을 저장.](https://git-scm.com/book/en/v2/images/snapshots.png)
 
-
+출처: [시간에 따른 스냅샷 저장 - Pro Git](https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EA%B8%B0%EC%B4%88)
 
 ### Git의 무결성
 
-Git은 데이터를 저장하기 전에 항상 체크섬을 구하고 그 체크섬으로 데이터를 관리한다. 그래서 체크섬을 이해하는 Git 없이는 어떠한 파일이나 디렉토리도 변경할 수 없다. 체크섬은 Git에서 사용하는 가장 기본적인(Atomic) 데이터 단위이자 Git의 기본 철학이다. Git 없이는 체크섬을 다룰 수 없어서 파일의 상태도 알 수 없고 심지어 데이터를 잃어버릴 수도 없다.
+Git은 데이터를 저장하기 전에 항상 체크섬을 구하고 그 체크섬으로 데이터를 관리한다. 그래서 체크섬을 이해하는 Git 없이는 어떠한 파일이나 디렉토리도 변경할 수 없다..
 
 ### Git은 데이터를 추가하기만 한다
 
-Git으로 무얼 하든 Git 데이터베이스에 데이터가 *추가* 된다. 되돌리거나 데이터를 삭제할 방법이 없다. 다른 VCS처럼 Git도 커밋하지 않으면 변경사항을 잃어버릴 수 있다. 하지만, 일단 스냅샷을 커밋하고 나면 데이터를 잃어버리기 어렵다. 
+Git 데이터베이스에 데이터가 추가될 뿐이며되돌리거나 데이터를 삭제할 방법이 없다. 다른 VCS처럼 Git도 커밋하지 않으면 변경사항을 잃어버릴 수 있다. 하지만, 일단 스냅샷을 커밋하고 나면 데이터를 잃어버리기 어렵다. 
 
 [되돌리기](https://git-scm.com/book/ko/v2/ch00/_undoing)을 보면 Git에서 데이터를 어떻게 저장하고 손실을 어떻게 복구하는지 알 수 있다.
 
@@ -36,6 +38,8 @@ Git은 파일을 *Committed*, *Modified*, *Staged* 이렇게 세 가지 상태�
 
 ![Working tree, staging area, and Git directory.](https://git-scm.com/book/en/v2/images/areas.png)
 
+출처: [워킹 디렉토리, staging area, Git 저장소 - Pro Git](https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EA%B8%B0%EC%B4%88)
+
 Git으로 하는 일은 기본적으로 아래와 같다.
 
 1. 워킹 트리에서 파일을 수정한다.
@@ -46,7 +50,7 @@ Git 디렉토리에 있는 파일들은 Committed 상태이다. 파일을 수정
 
 ### 워킹 트리, Staging Area, Git 디렉토리(.git)
 
-`Git 디렉토리(local repo)`는 Git이 프로젝트의 메타데이터와 객체 데이터베이스를 저장하는 곳을 말한다. 이 Git 디렉토리가 Git의 핵심이다. 다른 컴퓨터에 있는 저장소를 *Clone* 할 때 Git 디렉토리가 만들어진다.
+`Git 디렉토리(local repo)`는 Git이 프로젝트의 메타데이터와 객체 데이터베이스를 저장하는 곳을 말한다. 이 Git 디렉토리가 Git의 핵심이다. 다른 컴퓨터에 있는 저장소를 Clone할 때 Git 디렉토리가 만들어진다.
 
 `워킹 트리`는 프로젝트의 특정 버전을 Checkout 한 것이다. Git 디렉토리는 지금 작업하는 디스크에 있고 그 디렉토리 안에 압축된 데이터베이스에서 파일을 가져와서 워킹 트리를 만든다.(쉽게 말해 .git 뺀 나머지)
 
@@ -104,6 +108,8 @@ refs/
 ### 파일의 라이프사이클
 
 ![The lifecycle of the status of your files.](https://git-scm.com/book/en/v2/images/lifecycle.png)
+
+출처: [워킹 디렉토리 내 파일의 라이프사이클 - Pro Git](https://git-scm.com/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EC%88%98%EC%A0%95%ED%95%98%EA%B3%A0-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%97%90-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0)
 
 - Untracked: Git의 관리대상이 아닌 상태. Working directory에 있는 파일 중 스냅샷에도 staging area에도 포함되지 않은 상태다.
 - Tracked: Git의 관리대상인 상태.

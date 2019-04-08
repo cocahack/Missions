@@ -113,7 +113,7 @@ EOF
 문자열을 명령어의 표준 출력으로 전달한다.
 
 ```console
-$ bc <<< 1+1
+$ bc <<< '1+1'
 2
 ```
 
@@ -121,7 +121,7 @@ $ bc <<< 1+1
 
 ## 파일 시스템 구조
 
-[![Image result for rhel 7 file system hierarchy](https://lh3.googleusercontent.com/-MVKJC6xREvI/VrjBDeauSXI/AAAAAAAABe8/9vdhVscw-xI/s800-Ic42/centos7-filesystem.png)](https://elearning.wsldp.com/pcmagazine/centos-7-filesystem-hierarchy/)
+![Image result for rhel 7 file system hierarchy](https://lh3.googleusercontent.com/-MVKJC6xREvI/VrjBDeauSXI/AAAAAAAABe8/9vdhVscw-xI/s800-Ic42/centos7-filesystem.png)출처: [RHEL7의 파일 시스템 구조 - elearning.wsldp.com](https://elearning.wsldp.com/pcmagazine/centos-7-filesystem-hierarchy/)
 
 - `/etc`: 프로그램과 패키지를 위한 설정 파일이 들어 있다.
 - `/var`: 가변 데이터가 저장되는 곳이다. 일반적으로 로그 파일이 여기에 위치하며, Apache 웹 서버의 기본 디렉토리가 위치하는 곳이다. 
@@ -257,6 +257,8 @@ drwxr-xr-x  2 mcc  staff    64B  4  5 16:19 dir
 아래의 그림은 파일의 권한을 해석하는 방법을 보여준다.
 
 ![Image result for linux permission](https://www.pluralsight.com/content/dam/pluralsight/resources/blog/2011/12/linux-file-permissions/wp/img/Linux-File-Permissions-2.jpg)
+
+출처: [리눅스에서의 파일 권한 - www.pluralsight.com ](https://www.pluralsight.com/blog/it-ops/linux-file-permissions)
 
 가장 첫 비트는 파일의 종류를 나타낸다. 다음 9개의 비트는 3개씩 묶어서 소유자의 권한, 그룹의 권한, 소유자와 그룹에 속하지 않은 다른 사용자의 권한을 나타낸다.
 
