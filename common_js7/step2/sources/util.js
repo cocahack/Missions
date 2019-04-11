@@ -1,5 +1,5 @@
 (function callModuleChecker(){
-  let result = new Date();
+  var result = new Date();
   console.log("WELCOME UTIL MODULE : " + result);
 })();
 

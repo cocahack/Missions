@@ -2,7 +2,7 @@
 
 ## 19년 4월 2일
 
-### Baekjoon Online Judge
+### BOJ
 
 [1000번 A+B](https://www.acmicpc.net/problem/1000) - 입출력
 
@@ -18,7 +18,7 @@
 
 ## 19년 4월 4일
 
-### Baekjoon Online Judge
+### BOJ
 
 [2839번 설탕 배달](https://www.acmicpc.net/problem/2839) - 구현
 
@@ -34,7 +34,7 @@
 
 [Array - DS](https://www.hackerrank.com/challenges/arrays-ds/problem) - 자료구조
 
-### 19년 4월 6일
+## 19년 4월 6일
 
 ### 구글 Code Jam
 
@@ -50,14 +50,34 @@
 
 ### Baekjoon Online Judge
 
-[1427번 소트인사이드](https://www.acmicpc.net/problem/1000) - 정렬
+[1427번 소트인사이드](https://www.acmicpc.net/problem/1427) - 정렬
 
-[1912번 연속합](https://www.acmicpc.net/problem/1000) - 정렬, 투 포인터
+[1912번 연속합](https://www.acmicpc.net/problem/1912) - 정렬, 투 포인터
 
-[2439번 별찍기](https://www.acmicpc.net/problem/1000) - 입출력
+[2439번 별찍기](https://www.acmicpc.net/problem/2439) - 입출력
 
 ### 프로그래머스
 
 [k번째수](https://programmers.co.kr/learn/courses/30/lessons/42748) - 구현, 정렬
 
 [가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746) - 정렬
+
+## 19년 4월 10일
+
+### BOJ
+
+[1463번 1로 만들기](https://www.acmicpc.net/problem/1463) - DP
+
+[2953번 나는 요리사다](https://www.acmicpc.net/problem/2953) - 배열
+
+### 해커랭크
+
+[Left Rotation](https://www.hackerrank.com/challenges/array-left-rotation/problem) - 배열
+
+[2D Array - DS](https://www.hackerrank.com/challenges/2d-array/problem) - 배열
+
+## 19년 4월 11일
+
+### BOJ
+
+[17130번 토끼가 정보섬에 올라온 이유](https://www.acmicpc.net/problem/17130) - DP, BFS

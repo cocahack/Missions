@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/constants.h
+string
+-
+
+/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/custom_memory.cpp
+custom_memory.h
+/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/custom_memory.h
+stdexcept
+-
+iostream
+-
+
+/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/custom_memory.h
+cstdint
+-
+constants.h
+/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/constants.h
+
+/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/main.cpp
+iostream
+-
+custom_memory.h
+/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/custom_memory.h
+
