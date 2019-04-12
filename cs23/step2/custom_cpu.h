@@ -8,15 +8,23 @@
 #include <cstdint>
 #include "register.h"
 #include "alu.h"
+#include "custom_memory.h"
 
-class cpu
+class Cpu
 {
 private:
-    reg *pc, *r;
+    Reg *pc, *registers;
+
+
 
 public:
-    cpu(){ pc = new reg, r = new reg[7]; }
-    ~cpu(){delete[] r;}
+    Cpu(){ pc = new Reg, registers = new Reg[7]; }
+    ~Cpu(){delete[] registers;}
+
+    void reset();
+    uint16_t fetch(Memory* mem);
+    void execute(uint16_t instruction);
+    uint16_t* dump();
 };
 
 #endif //STEP2_CUSTOM_CPU_H

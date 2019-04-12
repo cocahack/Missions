@@ -86,6 +86,9 @@
 		<Unit filename="/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/constants.h">
 			<Option target="step2"/>
 		</Unit>
+		<Unit filename="/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/custom_cpu.cpp">
+			<Option target="step2"/>
+		</Unit>
 		<Unit filename="/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/custom_cpu.h">
 			<Option target="step2"/>
 		</Unit>
@@ -99,6 +102,9 @@
 			<Option target="step2"/>
 		</Unit>
 		<Unit filename="/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/register.h">
+			<Option target="step2"/>
+		</Unit>
+		<Unit filename="/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/util.h">
 			<Option target="step2"/>
 		</Unit>
 		<Unit filename="/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/CMakeLists.txt">

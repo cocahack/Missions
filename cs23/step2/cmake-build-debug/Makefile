@@ -123,6 +123,33 @@ step2/fast:
 	$(MAKE) -f CMakeFiles/step2.dir/build.make CMakeFiles/step2.dir/build
 .PHONY : step2/fast
 
+custom_cpu.o: custom_cpu.cpp.o
+
+.PHONY : custom_cpu.o
+
+# target to build an object file
+custom_cpu.cpp.o:
+	$(MAKE) -f CMakeFiles/step2.dir/build.make CMakeFiles/step2.dir/custom_cpu.cpp.o
+.PHONY : custom_cpu.cpp.o
+
+custom_cpu.i: custom_cpu.cpp.i
+
+.PHONY : custom_cpu.i
+
+# target to preprocess a source file
+custom_cpu.cpp.i:
+	$(MAKE) -f CMakeFiles/step2.dir/build.make CMakeFiles/step2.dir/custom_cpu.cpp.i
+.PHONY : custom_cpu.cpp.i
+
+custom_cpu.s: custom_cpu.cpp.s
+
+.PHONY : custom_cpu.s
+
+# target to generate assembly for a file
+custom_cpu.cpp.s:
+	$(MAKE) -f CMakeFiles/step2.dir/build.make CMakeFiles/step2.dir/custom_cpu.cpp.s
+.PHONY : custom_cpu.cpp.s
+
 custom_memory.o: custom_memory.cpp.o
 
 .PHONY : custom_memory.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... step2"
+	@echo "... custom_cpu.o"
+	@echo "... custom_cpu.i"
+	@echo "... custom_cpu.s"
 	@echo "... custom_memory.o"
 	@echo "... custom_memory.i"
 	@echo "... custom_memory.s"

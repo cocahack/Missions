@@ -7,14 +7,14 @@
 
 #include <cstdint>
 
-class reg
+class Reg
 {
 private:
     uint16_t value;
 public:
-    reg():value(0x0){}
+    Reg():value(0x0){}
     void store(uint16_t value_){ value = value_; }
-    uint16_t get_value() { return value; }
+    uint16_t get_value() const { return value; }
 };
 
 

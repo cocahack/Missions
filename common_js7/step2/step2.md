@@ -572,11 +572,11 @@ console.log(obj.name); // 'squad'
 
 
 
-## 출처
+## References
 
-`var` 키워드: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var>
+[ MDN - `var` 키워드](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
 
-`let` 키워드: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let>
+[MDN - `let` 키워드](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 
 `const` 키워드: <https://developer.mozilla.org/en-US/search?q=const>
 

@@ -1,7 +1,7 @@
 #include <iostream>
 #include "custom_memory.h"
-#define print(content) std::cout << std::hex << content << "\n";
-#define len(arr) sizeof arr / sizeof arr[0]
+#include "util.h"
+
 int main() {
 
     Memory *memory = new Memory();
