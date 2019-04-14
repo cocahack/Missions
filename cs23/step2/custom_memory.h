@@ -11,13 +11,13 @@
 class Memory
 {
 private:
-    uint8_t *mem_array, *code;
+    Byte *mem_array, *code;
 
-    uint16_t access_two_bytes(uint32_t address);
+    Word access_two_bytes(uint32_t address);
 public:
     Memory()
     {
-        mem_array = new uint8_t[PROGRAM_TEXT_SIZE + PROGRAM_HEAP_SIZE];
+        mem_array = new Byte[PROGRAM_TEXT_SIZE + PROGRAM_HEAP_SIZE];
         code = mem_array + 0x0000;
     }
 
@@ -26,11 +26,11 @@ public:
         delete[] mem_array;
     }
 
-    uint16_t peek(uint32_t address);
-    void locate(uint16_t * program, size_t len);
-    uint16_t fetch(uint16_t program_count);
-    uint16_t load(uint16_t address);
-    void store(uint16_t address, uint16_t data);
+    Word peek(Double_word address);
+    void locate(Word* program, size_t len);
+    Word fetch(Word program_count);
+    Word load(Word address);
+    void store(Word address, Word data);
 };
 
 #endif //STEP2_CUSTOM_MEMORY_H

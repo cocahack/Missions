@@ -6,15 +6,16 @@
 #define STEP2_REGISTER_H
 
 #include <cstdint>
+#include "constants.h"
 
 class Reg
 {
 private:
-    uint16_t value;
+    Word value;
 public:
     Reg():value(0x0){}
-    void store(uint16_t value_){ value = value_; }
-    uint16_t get_value() const { return value; }
+    void store(Word value_){ value = value_; }
+    Word get_value() const { return value; }
 };
 
 

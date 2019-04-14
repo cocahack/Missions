@@ -1,32 +1,52 @@
 #include <iostream>
+#include <memory>
 #include "custom_memory.h"
 #include "util.h"
+#include "custom_cpu.h"
 
 int main() {
 
-    Memory *memory = new Memory();
+    std::unique_ptr<Memory> memory {new Memory};
+    std::unique_ptr<Cpu> cpu {new Cpu(memory.get())};
 
-    uint16_t program_counter = 0x0;
+//    uint16_t program_counter = 0x0;
+//
+//    uint16_t program_code[3] = {0x1111, 0x4444, 0x3333};
+//    memory->locate(program_code, len(program_code));
+//
+//    for(auto i = 0; i < 3; ++i) {
+//        print(memory->fetch(program_counter));
+//        program_counter++;
+//    }
+//
+//    print(memory->peek(2));
+//
+//    memory->store(0x5000, 0x5555);
+//
+//    print(memory->load(0x5000));
+//
+//    print(memory->peek(0x15000));
+//    print(memory->peek(0x3));
+//    print(memory->peek(0x20000));
 
-    uint16_t program_code[3] = {0x1111, 0x4444, 0x3333};
-    memory->locate(program_code, len(program_code));
+    uint16_t program[6] = {
+            0xD8A0,
+            0xDA02,
+            0x1305,
+            0x8464,
+            0x9642,
+            0x4724
+    };
 
-    for(auto i = 0; i < 3; ++i) {
-        print(memory->fetch(program_counter));
-        program_counter++;
+    memory->locate(program, len(program));
+    cpu->execute(len(program));
+
+    auto reg_dump = cpu->dump();
+
+    for(int i=0; i<7; ++i){
+        std::cout << *(reg_dump.get()+i) << "\n";
     }
 
-    print(memory->peek(2));
 
-    memory->store(0x5000, 0x5555);
-
-    print(memory->load(0x5000));
-
-    print(memory->peek(0x15000));
-    print(memory->peek(0x3));
-    print(memory->peek(0x20000));
-
-
-    delete memory;
     return 0;
 }

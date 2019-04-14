@@ -83,3 +83,14 @@
 [11333번 4xn 타일링](https://www.acmicpc.net/problem/11333) - DP
 
 [17130번 토끼가 정보섬에 올라온 이유](https://www.acmicpc.net/problem/17130) - DP, BFS
+
+## 19년 4월 14일
+
+### BOJ
+
+[4574번 스도미노쿠](https://www.acmicpc.net/problem/4574) - 백트래킹
+
+### 해커랭크
+
+[Crossword Puzzle](https://www.hackerrank.com/challenges/crossword-puzzle/problem) - 백트래킹
+

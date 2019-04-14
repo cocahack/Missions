@@ -46,7 +46,7 @@ console.log(obj.SIZE); // undefined
 
 #### Object.entries
 
-`Object.entries` 는 키-값 쌍을 리스트로 반환한다. 리스트에는 열거할 수 있는(enumerable) 프로퍼티만 포함되며 프로토타입 체인의 프로퍼티는 포함하지 않는다. `enumerable property`  란 내부의 `enumerable flag` 의 값이 `true` 로 설정된 프로퍼티로, `simple assignment` 또는 `property initializer` 로 생성된 프로퍼티가 이에 해당된다. 
+`Object.entries` 는 키-값 쌍을 리스트로 반환한다. 리스트에는 프로퍼티의 속성 중 `enumerable`이 `true` 인 프로퍼티만 포함되며 프로토타입 체인의 프로퍼티는 포함하지 않는다. `enumerable property`  란 내부의 `enumerable flag` 의 값이 `true` 로 설정된 프로퍼티로, `simple assignment` 또는 `property initializer` 로 생성된 프로퍼티가 이에 해당된다. 
 
 ```javascript
 const symbol = Symbol();
@@ -72,7 +72,7 @@ Object.entries(obj).forEach(entry => {
 
 #### Object.keys
 
-객체의 키를 배열로 반환한다. 열거할 수 있는 프로퍼티만 배열에 존재한다. 
+객체의 키를 배열로 반환한다. 프로퍼티의 속성 중 `enumerable`이 `true` 인 프로퍼티만 포함한다.
 
 ```javascript
 let obj = {
@@ -86,7 +86,7 @@ console.log(Object.keys(obj)); // ['key1', 'key2', 'key3']
 
 #### Object.values
 
-프로퍼티 값의 배열을 반환한다. 역시 열거할 수 있는 프로퍼티만 해당된다.
+프로퍼티 값의 배열을 반환한다. 프로퍼티의 속성 중 `enumerable`이 `true` 인 프로퍼티만 포함한다.
 
 ```javascript
 let obj = {
@@ -103,25 +103,6 @@ console.log(Object.keys(obj)); // ['value1', 'value2', 'value3']
 객체의 열거할 수 있는 프로퍼티를 순회하는데 사용한다. 프로토타입 체인에서 상속된 프로퍼티도 포함된다.
 
 ```javascript
-const symbol = Symbol();
-
-const obj = { a: 1, b: 2, c: 3, [symbol]: 4};
-
-for(let prop in obj){
-  console.log(`${prop}: ${obj[prop]}`);
-}
-/*
-a: 1
-b: 2
-c: 3
-*/
-```
-
-#### Object.getOwnPropertyNames
-
-열거할 수 없는 프로퍼티를 포함한 모든 프로퍼티를 반환한다. 그러나 키가 심볼인 프로퍼티는 제외된다.
-
-```javascript
 class Super{
   constructor(){
     this.name = 'super';
@@ -129,7 +110,7 @@ class Super{
   }
 }
 
-Super.prototype.inheritedProperty = 'non-enumerable';
+Super.prototype.propertyInChain = 'Use for in or getOwnPropertyNames';
 
 class Sub extends Super{
   constructor(){
@@ -141,14 +122,50 @@ class Sub extends Super{
 
 const obj = new Sub();
 
+Object.defineProperty(obj, 'isSub', {enumerable: false});
+
 for(let p in obj){
   console.log(`${p}: ${obj[p]}`);
 }
+/*
+name: sub
+isSuper: true
+propertyInChain: Use for in or getOwnPropertyNames
+*/
+```
+
+#### Object.getOwnPropertyNames
+
+열거할 수 없는 프로퍼티를 포함한 모든 프로퍼티를 반환한다. 키가 심볼이거나 프로토타입 체인에 존재하는 프로퍼티는 제외된다.
+
+```javascript
+class Super{
+  constructor(){
+    this.name = 'super';
+    this.isSuper = true;
+  }
+}
+
+Super.prototype.propertyInChain = 'Use for in or getOwnPropertyNames';
+
+class Sub extends Super{
+  constructor(){
+    super();
+    this.name = 'sub';
+    this.isSub = true;
+  }
+}
+
+const obj = new Sub();
+
+Object.defineProperty(obj, 'isSub', {enumerable: false});
+
+console.log(Object.getOwnPropertyNames(obj)); // [ 'name', 'isSuper', 'isSub' ]
 ```
 
 ### 객체의 프로퍼티 속성
 
-프로퍼티에는 객체에서 어떻게 동작할지 결정할 척도인 `attribute`가 존재한다. `Object.getOwnPropertyDescription` 을 사용하면 프로퍼티의 속성을 볼 수 있다.
+프로퍼티에는 객체에서 어떻게 동작할지 결정할 척도인 `attribute`가 존재한다. `Object.getOwnPropertyDescriptor` 를 사용하면 프로퍼티의 속성을 볼 수 있다.
 
 ```javascript
 const obj = {name: 'Object'}

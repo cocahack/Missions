@@ -6,9 +6,39 @@
 
 #IncludeRegexTransform: 
 
+/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/alu.h
+cstdint
+-
+register.h
+/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/register.h
+
 /Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/constants.h
 string
 -
+
+/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/custom_cpu.cpp
+cstdint
+-
+custom_cpu.h
+/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/custom_cpu.h
+util.h
+/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/util.h
+custom_memory.h
+/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/custom_memory.h
+memory
+-
+
+/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/custom_cpu.h
+cstdint
+-
+memory
+-
+register.h
+/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/register.h
+alu.h
+/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/alu.h
+custom_memory.h
+/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/custom_memory.h
 
 /Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/custom_memory.cpp
 custom_memory.h
@@ -27,6 +57,20 @@ constants.h
 /Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/main.cpp
 iostream
 -
+memory
+-
 custom_memory.h
 /Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/custom_memory.h
+util.h
+/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/util.h
+custom_cpu.h
+/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/custom_cpu.h
+
+/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/register.h
+cstdint
+-
+constants.h
+/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/constants.h
+
+/Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/util.h
 
