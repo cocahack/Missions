@@ -574,18 +574,18 @@ console.log(obj.name); // 'squad'
 
 ## References
 
-[ MDN - `var` 키워드](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
+[var 키워드 - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
 
-[MDN - `let` 키워드](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+[let 키워드 - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 
-`const` 키워드: <https://developer.mozilla.org/en-US/search?q=const>
+[const 키워드 - MDN](https://developer.mozilla.org/en-US/search?q=const)
 
-동적 타입 바인딩: <https://m.blog.naver.com/PostView.nhn?blogId=hjdu21&logNo=220728153470&proxyReferer=https%3A%2F%2Fwww.google.com%2F>
+[동적 타입 바인딩](https://m.blog.naver.com/PostView.nhn?blogId=hjdu21&logNo=220728153470&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
 
-안전한 타입 체크: <https://ultimatecourses.com/blog/understanding-javascript-types-and-reliable-type-checking>
+[안전한 타입 체크](https://ultimatecourses.com/blog/understanding-javascript-types-and-reliable-type-checking)
 
-`instanceof` : <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof>
+[instanceof - MDN ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof)
 
-Default parameter: <https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/Default_parameters>
+[Default parameter - MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/Default_parameters)
 
-Rest parameter: <https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/rest_parameters>
+[Rest parameter - MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/rest_parameters)

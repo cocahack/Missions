@@ -28,10 +28,15 @@ int main() {
 //    print(memory->peek(0x15000));
 //    print(memory->peek(0x3));
 //    print(memory->peek(0x20000));
+//
+//
+//    cpu->reset();
+
+    memory->store(0xA2, 444);
 
     uint16_t program[6] = {
-            0xD8A0,
             0xDA02,
+            0xD8A0,
             0x1305,
             0x8464,
             0x9642,
@@ -44,8 +49,11 @@ int main() {
     auto reg_dump = cpu->dump();
 
     for(int i=1; i<=7; ++i){
-        std::cout << *(reg_dump.get()+i) << "\n";
+        std::cout << (int16_t )*(reg_dump.get()+i) << "\n";
     }
+
+    std::cout << (int16_t)memory->peek(0x100A2) << "\n";
+    std::cout << (int16_t)memory->peek(0x100A4) ;
 
 
     return 0;

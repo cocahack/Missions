@@ -12,7 +12,7 @@ typedef void (Cpu::*fn)(Byte, Byte, Byte);
 void Cpu::reset()
 {
     auto length = len(registers);
-    for(auto i=0; i < length; ++i){
+    for(auto i=0; i < 8; ++i){
         registers[i].store(0x0);
     }
     pc->store(0x0);
@@ -59,9 +59,8 @@ void Cpu::execute_internally(Word raw_inst)
 
 std::unique_ptr<Word []> Cpu::dump()
 {
-    auto len = sizeof registers / sizeof registers[0];
-    auto reg_values = std::make_unique<Word[]>(len);
-    for(auto i = 0; i < len; ++i){
+    auto reg_values = std::make_unique<Word[]>(7);
+    for(auto i = 1; i < 8; ++i){
         reg_values[i] = registers[i].get_value();
     }
     return reg_values;
@@ -70,13 +69,13 @@ std::unique_ptr<Word []> Cpu::dump()
 void Cpu::load_from_reg(Byte dst_reg, Byte base_reg, Byte offset_reg)
 {
     auto address = registers[base_reg].get_value() + registers[offset_reg].get_value();
-    registers[dst_reg].store(mem_ptr->peek(address));
+    registers[dst_reg].store(mem_ptr->load(address));
 }
 
 void Cpu::load_from_offset(Byte dst_reg, Byte base_reg, Byte offset)
 {
     auto address = registers[base_reg].get_value() + offset;
-    registers[dst_reg].store(mem_ptr->peek(address));
+    registers[dst_reg].store(mem_ptr->load(address));
 }
 
 void Cpu::store_from_reg(Byte src_reg, Byte base_reg, Byte offset_reg)
@@ -124,7 +123,7 @@ void Cpu::sub_reg(Byte dst_reg, Byte lhs_reg, Byte rhs_reg)
 
 void Cpu::sub_value(Byte dst_reg, Byte operand_reg, Byte value)
 {
-    auto result = alu->add_impl(registers[operand_reg], value);
+    auto result = alu->sub_impl(registers[operand_reg], value);
     registers[dst_reg].store(result);
 }
 

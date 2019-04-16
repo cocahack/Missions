@@ -5,7 +5,7 @@
 #ifndef STEP2_UTIL_H
 #define STEP2_UTIL_H
 
-#define print(content) std::cout << std::hex << content << "\n";
+#define print(content) std::cout /*<< std::hex*/ << content << "\n";
 #define len(arr) sizeof arr / sizeof arr[0]
 
 

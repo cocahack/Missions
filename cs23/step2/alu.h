@@ -22,12 +22,12 @@ public:
 
     Word sub_impl(const Reg& r1, const Reg& r2)
     {
-        return r1.get_value() - r2.get_value();
+        return (int16_t )r1.get_value() - (int16_t )r2.get_value();
     }
 
     Word sub_impl(const Reg& r1, const Word value)
     {
-        return r1.get_value() - value;
+        return (int16_t )r1.get_value() - (int16_t )value;
     }
     
     Word and_impl(const Reg& r1, const Reg& r2)
