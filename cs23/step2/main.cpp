@@ -43,7 +43,7 @@ int main() {
 
     auto reg_dump = cpu->dump();
 
-    for(int i=0; i<7; ++i){
+    for(int i=1; i<=7; ++i){
         std::cout << *(reg_dump.get()+i) << "\n";
     }
 
