@@ -1,5 +1,3 @@
 .*
 !/.gitignore
 test*.js
-CMakeLists.txt
-cmake-build-debug/*

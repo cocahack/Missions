@@ -106,3 +106,20 @@
 
 [1933번 스카이라인](https://www.acmicpc.net/problem/1933) - 라인 스위핑
 
+## 19년 4월 17일
+
+### BOJ
+
+[2108번 통계학](https://www.acmicpc.net/problem/2108) - 수학
+
+## 19년 4월 18일
+
+### BOJ
+
+[1516번 게임개발](https://www.acmicpc.net/problem/1516) - DFS, 위상정렬]
+
+## 19년 4월 19일
+
+### 프로그래머스
+
+[정수 삼각형](https://programmers.co.kr/learn/courses/30/lessons/43105) - DP

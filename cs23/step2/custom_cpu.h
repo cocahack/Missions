@@ -20,8 +20,6 @@ private:
     Memory* mem_ptr;
     ALU* alu;
 
-//    bool check_reg_num(Byte reg_num);
-
     void load_from_reg(Byte dst_reg, Byte base_reg, Byte offset_reg);
     void load_from_offset(Byte dst_reg, Byte base_reg, Byte offset);
 

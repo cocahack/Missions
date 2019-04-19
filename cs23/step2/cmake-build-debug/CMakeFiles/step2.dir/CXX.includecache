@@ -13,8 +13,6 @@ register.h
 /Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/register.h
 
 /Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/constants.h
-string
--
 
 /Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/custom_cpu.cpp
 cstdint
@@ -50,6 +48,8 @@ iostream
 
 /Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/custom_memory.h
 cstdint
+-
+cstdlib
 -
 constants.h
 /Users/mcc/Workspace/codesquad/repo/Missions/cs23/step2/constants.h

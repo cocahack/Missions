@@ -9,41 +9,31 @@
 
 Word Memory::peek(Double_word address)
 {
-    try {
-        if(address < PROGRAM_TEXT_SIZE + PROGRAM_HEAP_SIZE){
-            return access_two_bytes(address);
-        }
-        else {
-            throw std::out_of_range(OOR_MSG);
-        }
-    } catch(const std::out_of_range& oor){
-        std::cerr << "Memory access failed: " << oor.what() << "\n";
-    }
+    assert(address < PROGRAM_TEXT_SIZE + PROGRAM_HEAP_SIZE);
+    return mem_array[address];
 }
 
 void Memory::locate(Word *program, size_t len)
 {
         for (auto i = 0; i < len; ++i) {
-            *code = (Byte)program[i];
-            *(code + 1) = program[i] >> 8;
-            code += 2;
+            *code = program[i];
+            code++;
         }
 }
 
 Word Memory::fetch(Word program_count)
 {
-    return access_two_bytes(program_count * 2);
+    return mem_array[program_count];
 }
 
 Word Memory::load(Word address)
 {
-    return access_two_bytes(PROGRAM_TEXT_SIZE + address);
+    return mem_array[PROGRAM_TEXT_SIZE+address];
 }
 
 void Memory::store(Word address, Word data)
 {
-    *(mem_array + PROGRAM_TEXT_SIZE + address) = (Byte)data;
-    *(mem_array + PROGRAM_TEXT_SIZE + address + 1) = (data >> 8);
+    *(mem_array + PROGRAM_TEXT_SIZE + address) = data;
 }
 
 Word Memory::access_two_bytes(Double_word address)

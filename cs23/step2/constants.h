@@ -5,7 +5,6 @@
 #ifndef STEP2_CONSTANTS_H
 #define STEP2_CONSTANTS_H
 
-#include <string>
 using Word = uint16_t ;
 using Byte = uint8_t ;
 using Double_word = uint32_t ;
@@ -14,7 +13,6 @@ using Double_word = uint32_t ;
 constexpr Double_word PROGRAM_TEXT_SIZE = 1 << 16;
 constexpr Double_word PROGRAM_HEAP_SIZE = 1 << 16;
 
-const std::string OOR_MSG = "An address was out of range";
 
 
 #endif //STEP2_CONSTANTS_H

@@ -6,18 +6,19 @@
 #define STEP2_CUSTOM_MEMORY_H
 
 #include <cstdint>
+#include <cstdlib>
 #include "constants.h"
 
 class Memory
 {
 private:
-    Byte *mem_array, *code;
+    Word *mem_array, *code;
 
     Word access_two_bytes(uint32_t address);
 public:
     Memory()
     {
-        mem_array = new Byte[PROGRAM_TEXT_SIZE + PROGRAM_HEAP_SIZE];
+        mem_array = new Word[PROGRAM_TEXT_SIZE + PROGRAM_HEAP_SIZE];
         code = mem_array;
     }
 

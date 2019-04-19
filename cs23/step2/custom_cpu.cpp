@@ -27,34 +27,27 @@ Word Cpu::fetch()
 
 void Cpu::execute_internally(Word raw_inst)
 {
-    static fn ops[] = {nullptr, &Cpu::load_from_reg, &Cpu::load_from_offset,
+    static fn ops[] = {
+                nullptr, &Cpu::load_from_reg, &Cpu::load_from_offset,
                 &Cpu::store_from_reg, &Cpu::store_from_offset,
                 &Cpu::and_reg, &Cpu::or_reg,
                 &Cpu::add_reg, &Cpu::add_value,
-                &Cpu::sub_reg, &Cpu::sub_value};
+                &Cpu::sub_reg, &Cpu::sub_value
+    };
 
     Byte op = (raw_inst >> 12),
-            dst_reg = ( raw_inst >> 9 ) & (0x7),
-            second_reg = (raw_inst >> 6) & (0x7),
-            padding = (raw_inst >> 3) & (0x7);
+         dst_reg = ( raw_inst >> 9 ) & (0x7),
+         second_reg = (raw_inst >> 6) & (0x7),
+         padding = (raw_inst >> 3) & (0x7);
     Word offset = (padding & 0x4 ) == 0x4 ? raw_inst & 0x1F : raw_inst & 0x7;
 
-//    try {
-//        if(padding != 0x0 && padding != 0x4){
-//            throw
-//        }
-        if(op == 0xD){
-            Word move_to = raw_inst & 0x1FF;
-            move_value(dst_reg, move_to);
-        } else {
-            auto instruction_func = ops[op];
-            (this->*instruction_func)(dst_reg, second_reg, offset);
-        }
-//    } catch (){
-//
-//    }
-
-
+    if(op == 0xD){
+        Word move_to = raw_inst & 0x1FF;
+        move_value(dst_reg, move_to);
+    } else {
+        auto instruction_func = ops[op];
+        (this->*instruction_func)(dst_reg, second_reg, offset);
+    }
 }
 
 std::unique_ptr<Word []> Cpu::dump()
