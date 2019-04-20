@@ -35,8 +35,3 @@ void Memory::store(Word address, Word data)
 {
     *(mem_array + PROGRAM_TEXT_SIZE + address) = data;
 }
-
-Word Memory::access_two_bytes(Double_word address)
-{
-    return (Word )(*(mem_array + address)) | (Word)(*(mem_array + address + 1) << 8);
-}

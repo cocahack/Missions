@@ -9,10 +9,7 @@ using Word = uint16_t ;
 using Byte = uint8_t ;
 using Double_word = uint32_t ;
 
-
 constexpr Double_word PROGRAM_TEXT_SIZE = 1 << 16;
 constexpr Double_word PROGRAM_HEAP_SIZE = 1 << 16;
-
-
 
 #endif //STEP2_CONSTANTS_H

@@ -13,8 +13,6 @@ class Memory
 {
 private:
     Word *mem_array, *code;
-
-    Word access_two_bytes(uint32_t address);
 public:
     Memory()
     {

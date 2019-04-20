@@ -116,10 +116,18 @@
 
 ### BOJ
 
-[1516번 게임개발](https://www.acmicpc.net/problem/1516) - DFS, 위상정렬]
+[1516번 게임개발](https://www.acmicpc.net/problem/1516) - DFS, 위상정렬
 
 ## 19년 4월 19일
 
 ### 프로그래머스
 
 [정수 삼각형](https://programmers.co.kr/learn/courses/30/lessons/43105) - DP
+
+## 19년 4월 20일
+
+### 프로그래머스
+
+[네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162) - DFS
+
+[여행경로](https://programmers.co.kr/learn/courses/30/lessons/43164) - Euler circuit/trail
