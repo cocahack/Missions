@@ -131,3 +131,15 @@
 [네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162) - DFS
 
 [여행경로](https://programmers.co.kr/learn/courses/30/lessons/43164) - Euler circuit/trail
+
+## 19년 4월 21일
+
+### BOJ
+
+[2613번 숫자 구슬](https://www.acmicpc.net/problem/2613) - 이분 탐색
+
+[16918번 봄버맨](https://www.acmicpc.net/problem/16918) - 구현
+
+[16919번 봄버맨2](https://www.acmicpc.net/problem/16919) - 구현
+
+[16967번 배열 복원하기](https://www.acmicpc.net/problem/16967) - 구현
