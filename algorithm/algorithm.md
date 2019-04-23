@@ -66,7 +66,7 @@
 
 ### BOJ
 
-[1463번 1로 만들기](https://www.acmicpc.net/problem/1463) - DP
+[1463번 1로 만들기](https://www.acmicpc.net/problem/1463) - DP
 
 [2953번 나는 요리사다](https://www.acmicpc.net/problem/2953) - 배열
 
