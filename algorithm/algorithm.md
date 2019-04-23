@@ -143,3 +143,9 @@
 [16919번 봄버맨2](https://www.acmicpc.net/problem/16919) - 구현
 
 [16967번 배열 복원하기](https://www.acmicpc.net/problem/16967) - 구현
+
+## 19년 4월 23일
+
+### BOJ
+
+[2410번 2의 멱수의 합](https://www.acmicpc.net/problem/2410) - DP
