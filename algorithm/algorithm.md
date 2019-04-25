@@ -149,3 +149,9 @@
 ### BOJ
 
 [2410번 2의 멱수의 합](https://www.acmicpc.net/problem/2410) - DP
+
+## 19년 4월 25일
+
+### 프로그래머스
+
+[가장 긴 팰린드롬](https://programmers.co.kr/learn/courses/30/lessons/12904) - DP
