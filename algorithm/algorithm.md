@@ -155,3 +155,9 @@
 ### 프로그래머스
 
 [가장 긴 팰린드롬](https://programmers.co.kr/learn/courses/30/lessons/12904) - DP
+
+## 19년 4월 26일
+
+### BOJ
+
+[9465번 스티커](https://www.acmicpc.net/problem/9465) - DP
