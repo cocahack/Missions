@@ -161,3 +161,9 @@
 ### BOJ
 
 [9465번 스티커](https://www.acmicpc.net/problem/9465) - DP
+
+## 19년 5월 1일
+
+### 프로그래머스
+
+[주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584) - 스택
