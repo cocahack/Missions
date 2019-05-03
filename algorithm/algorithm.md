@@ -169,3 +169,11 @@
 [주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584) - 스택
 
 [피보나치 수](https://programmers.co.kr/learn/courses/30/lessons/12945) - DP
+
+## 19년 5월 3일
+
+### 프로그래머스 
+
+[예산](https://programmers.co.kr/learn/courses/30/lessons/12982) - 정렬
+
+[영어 끝말잇기](https://programmers.co.kr/learn/courses/30/lessons/12981) - 해시
