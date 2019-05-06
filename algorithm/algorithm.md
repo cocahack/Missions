@@ -177,3 +177,9 @@
 [예산](https://programmers.co.kr/learn/courses/30/lessons/12982) - 정렬
 
 [영어 끝말잇기](https://programmers.co.kr/learn/courses/30/lessons/12981) - 해시
+
+## 19년 5월 5일
+
+### 프로그래머스 
+
+[큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883) - 그리디
