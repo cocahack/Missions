@@ -183,3 +183,17 @@
 ### 프로그래머스 
 
 [큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883) - 그리디
+
+## 19년 5월 6일
+
+### BOJ
+
+[진법 변환 2](https://www.acmicpc.net/problem/11005) - 수학
+
+[진법 변환](https://www.acmicpc.net/problem/2745) - 수학
+
+[순열 사이클](https://www.acmicpc.net/problem/10451) - 그래프, DFS
+
+[반복수열](https://www.acmicpc.net/problem/2331) - 구현
+
+[텀 프로젝트](https://www.acmicpc.net/problem/9466) - 그래프, DFS
