@@ -206,3 +206,19 @@
 [탑](https://programmers.co.kr/learn/courses/30/lessons/42588) - 구현
 
 [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860) - 그리디, 구현
+
+## 19년 5월 8일
+
+### BOJ
+
+[달이 차오른다, 가](https://www.acmicpc.net/problem/1194) - BFS
+
+## 19년 5월 9일
+
+### 프로그래머스 
+
+[문자열 내림차순으로 배치하기](https://programmers.co.kr/learn/courses/30/lessons/12917) - 정렬
+
+[콜라즈 추측](https://programmers.co.kr/learn/courses/30/lessons/12943) - 구현
+
+[시저 암호](https://programmers.co.kr/learn/courses/30/lessons/12926) - 구현
