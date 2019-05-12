@@ -211,7 +211,7 @@
 
 ### BOJ
 
-[달이 차오른다, 가](https://www.acmicpc.net/problem/1194) - BFS
+[달이 차오른다, 가자](https://www.acmicpc.net/problem/1194) - BFS
 
 ## 19년 5월 9일
 
@@ -222,3 +222,15 @@
 [콜라즈 추측](https://programmers.co.kr/learn/courses/30/lessons/12943) - 구현
 
 [시저 암호](https://programmers.co.kr/learn/courses/30/lessons/12926) - 구현
+
+## 19년 5월 10일
+
+### BOJ
+
+[탑](https://www.acmicpc.net/problem/2493) - 스택, BST
+
+## 19년 5월 11일
+
+### 프로그래머스 
+
+[최고의 집합](https://programmers.co.kr/learn/courses/30/lessons/12938) - 구현
