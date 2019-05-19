@@ -234,3 +234,11 @@
 ### 프로그래머스 
 
 [최고의 집합](https://programmers.co.kr/learn/courses/30/lessons/12938) - 구현
+
+## 19년 5월 18일
+
+### 프로그래머스 
+
+[쇠막대기](https://programmers.co.kr/learn/courses/30/lessons/42585) - 스택
+
+[숫자 게](https://programmers.co.kr/learn/courses/30/lessons/12987) - 그리디
