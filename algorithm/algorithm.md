@@ -242,3 +242,9 @@
 [쇠막대기](https://programmers.co.kr/learn/courses/30/lessons/42585) - 스택
 
 [숫자 게](https://programmers.co.kr/learn/courses/30/lessons/12987) - 그리디
+
+## 19년 5월 20일
+
+### BOJ
+
+[암호 만들기](https://www.acmicpc.net/problem/1759) - 백트래킹
