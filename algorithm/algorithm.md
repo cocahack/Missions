@@ -248,3 +248,9 @@
 ### BOJ
 
 [암호 만들기](https://www.acmicpc.net/problem/1759) - 백트래킹
+
+## 19년 5월 18일
+
+### 프로그래머스 
+
+[전화번호 목록](https://programmers.co.kr/learn/courses/30/lessons/42577) - 해시
