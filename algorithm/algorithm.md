@@ -249,8 +249,18 @@
 
 [암호 만들기](https://www.acmicpc.net/problem/1759) - 백트래킹
 
-## 19년 5월 18일
+## 19년 5월 23일
 
 ### 프로그래머스 
 
 [전화번호 목록](https://programmers.co.kr/learn/courses/30/lessons/42577) - 해시
+
+## 19년 5월 26일
+
+### BOJ
+
+[랜선 자르기](https://www.acmicpc.net/problem/1654) - 이분탐색
+
+[네 수](https://www.acmicpc.net/problem/10824) - 구현
+
+[대회 or 인턴](https://www.acmicpc.net/problem/2875) - 그리디
