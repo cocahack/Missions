@@ -264,3 +264,15 @@
 [네 수](https://www.acmicpc.net/problem/10824) - 구현
 
 [대회 or 인턴](https://www.acmicpc.net/problem/2875) - 그리디
+
+## 19년 6월 8일
+
+### BOJ
+
+[놀이 공원](https://www.acmicpc.net/problem/1561) - 이분탐색
+
+## 19년 6월 11일
+
+### 프로그래머스
+
+[단속 카메라](https://programmers.co.kr/learn/courses/30/lessons/42884) - 그리디
