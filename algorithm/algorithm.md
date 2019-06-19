@@ -276,3 +276,9 @@
 ### 프로그래머스
 
 [단속 카메라](https://programmers.co.kr/learn/courses/30/lessons/42884) - 그리디
+
+## 19년 6월 14일
+
+### BOJ
+
+[트리의 지름](https://www.acmicpc.net/problem/1167) - 트리
