@@ -282,3 +282,15 @@
 ### BOJ
 
 [트리의 지름](https://www.acmicpc.net/problem/1167) - 트리
+
+## 19년 6월 25일
+
+### BOJ
+
+[퍼즐](https://www.acmicpc.net/problem/1525) - BFS
+
+## 19년 6월 26일
+
+### BOJ
+
+[스도쿠](https://www.acmicpc.net/problem/2580) - DFS
