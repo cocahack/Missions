@@ -294,3 +294,9 @@
 ### BOJ
 
 [스도쿠](https://www.acmicpc.net/problem/2580) - DFS
+
+## 19년 6월 27일
+
+### BOJ
+
+[곱셈](https://www.acmicpc.net/problem/1629) - 정수론, DP
