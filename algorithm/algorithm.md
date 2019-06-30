@@ -300,3 +300,9 @@
 ### BOJ
 
 [곱셈](https://www.acmicpc.net/problem/1629) - 정수론, DP
+
+## 19년 6월 30일
+
+### BOJ
+
+[30](https://www.acmicpc.net/problem/10610) - 그리디
