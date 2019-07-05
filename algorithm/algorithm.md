@@ -306,3 +306,13 @@
 ### BOJ
 
 [30](https://www.acmicpc.net/problem/10610) - 그리디
+
+## 19년 7월 5일
+
+### geeksforgeeks
+
+[Delete a node from BST](https://practice.geeksforgeeks.org/problems/delete-a-node-from-bst/1) - BST
+
+### BOJ
+
+[병든 나이트](https://www.acmicpc.net/problem/1783) - 그리디
