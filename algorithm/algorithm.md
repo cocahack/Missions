@@ -316,3 +316,11 @@
 ### BOJ
 
 [병든 나이트](https://www.acmicpc.net/problem/1783) - 그리디
+
+## 19년 7월 7일
+
+### BOJ
+
+[최소 스패닝 트리](https://www.acmicpc.net/problem/1194) - 크루스칼
+
+[연구소](https://www.acmicpc.net/problem/14502) - 조합, DFS, BFS
