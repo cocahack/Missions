@@ -324,3 +324,9 @@
 [최소 스패닝 트리](https://www.acmicpc.net/problem/1194) - 크루스칼
 
 [연구소](https://www.acmicpc.net/problem/14502) - 조합, DFS, BFS
+
+## 19년 7월 12일
+
+### BOJ
+
+[물통](https://www.acmicpc.net/problem/1194) - 완전탐색
