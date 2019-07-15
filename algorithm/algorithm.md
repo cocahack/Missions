@@ -330,3 +330,9 @@
 ### BOJ
 
 [물통](https://www.acmicpc.net/problem/1194) - 완전탐색
+
+## 19년 7월 15일
+
+### BOJ
+
+[직사각형으로 나누기](https://www.acmicpc.net/problem/1451) - 부분합, 브루트포스
